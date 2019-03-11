@@ -1,0 +1,619 @@
+body, html {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 200px;
+    height: 200px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+    z-index: 2;
+}
+
+.flip-card-back {
+    background-color: #25294F;
+    color: white;
+    transform: rotateY(180deg);
+    z-index: 1;
+}
+
+.parallax1 {
+    /* The image used */
+    background-image: url('../images/EBEC2017.jpg');
+    /* Full height */
+    min-height: 300px; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax2 {
+    /* The image used */
+    background-image: url('../images/BEST_Porto2.jpeg');
+    /* Full height */
+    min-height: 300px; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax3 {
+    /* The image used */
+    background-image: url('../images/Porto.jpeg');
+    /* Full height */
+    min-height: 300px; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 900px) {
+    .parallax1, .parallax2, .parallax3 {
+      background-attachment: scroll;
+    }
+}
+
+h2#golden-partners {
+    color:#B26912;
+}
+
+a#language-button {
+    background-color:#E0E1EB;
+}
+
+div#tab-content {
+    background-color:#F1D19E;
+}
+
+.txt{
+    cursor: pointer;
+}
+
+.txt:hover {
+    text-decoration: underline;
+}
+
+.c-no {
+    height:150px;
+}
+
+.grey-bg {
+    background:#ebebeb;
+}
+
+.counter-Txt {
+    text-align:center;
+    font-size:30px;
+    font-weight:bold;
+    text-transform:uppercase;
+    margin-top:20px;
+    margin-bottom:10px;
+}
+
+.counter-Txt>span {
+    display:block; 
+    font-size:46px;
+}
+
+@media(min-width:320px) and (max-width:767px){ 
+    .c-no {
+        height:100%;
+    }
+
+    .counter-Txt {
+        font-size: 20px;
+    }
+
+    .counter-Txt>span {
+        font-size: 31px;
+    }
+    .margin-bot-35 {
+        margin-bottom:35px;
+    }
+}
+
+.media-body>h1 {
+    color: #25294F;
+}
+
+div.container>div.media-body {
+    border:3px solid #B26912;
+}
+
+div>h1.text-left {
+    color:#8C2D19;
+}
+
+h5.panel-title>span.txt,  div.media-body>h2.TD, h2.Team{
+    color:#25294F;
+}
+
+div.media-body>h2.CS {
+    color:#8C2D19;
+}
+
+div>p.note {
+    font-size:16px;
+}
+
+h2.EBEC {
+    color: #EEA225;
+}
+
+p.fs-18 {
+    font-size: 18px;
+}
+
+div.media-body>p.fs-20 {
+    font-size: 20px;
+}
+
+img.team-pic {
+    width:200px;
+    height:200px;
+}
+
+a.dropitem{
+    color:white;
+}
+
+a.dropitem:hover{
+    color:#25294F;
+}
+
+a.disableitem{
+    color:#E0E1EB;
+}
+
+p.flip-card-text {
+    font-size:14px;
+}
+
+.thumbnail {
+    position: relative;
+}
+
+.caption {
+    position: absolute;
+    top: 10%;
+    left: 3%;
+    width: 85%;
+}
+
+.caption2 {
+    position: absolute;
+    top: 10%;
+    left: 07%;
+    width: 70%;
+}
+
+.vl {
+    border-left: 2px solid #25294F;
+    height: 100%;
+}
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+h1.facts-number-size {
+    font-size:60px;
+}
+
+.pyramid-font-size {
+    font-size:18px;
+}
+
+nav.navbar-cl, div.dropdown-menu {
+    background-color: transparent;
+    transition: background-color 1s ease 0s;
+}
+
+nav.solid, div.solid {
+    background-color:#25294F;
+    transition: background-color 1s ease 0s;
+}
+
+footer.footer-backcolor {
+    background-color:#25294F;
+}
+
+.footer-copyright {
+    padding: 10px 0;
+    font-size: 12px;
+    color: white;
+}
+
+div#initialfooter {
+    background-color:#E0E1EB;
+}
+
+h5.contact-h5 {
+    color:#25294F;
+}
+
+button.contact-submit {
+    background-color:#25294F;
+}
+
+.contact-label {
+    color:#25294F;
+}
+
+h6.contact-label-size {
+    font-size:14px;
+}
+
+.box_front_text:hover{
+    opacity:0.2;
+}
+
+.box_ebec{
+    border: 1px solid #E0E1EB;
+}
+
+.box_ebec:hover{
+    border: 1px solid #25294F;
+}
+
+
+div.row>div.cards {
+    margin:auto;
+}
+
+div>h6.ebec-texts {    
+	overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+img.blur:hover {
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+}
+
+img.logo1, img.logo2, img.logo {
+    transition: 1.5s;
+}
+
+@keyframes moveLogo1 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+img.logo1 {
+    animation: moveLogo1 3s 2s;
+}
+
+@keyframes moveLogo2 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+img.logo2 {
+    animation: moveLogo2 3s 2s;
+}
+
+@media only screen and (min-width: 600px) {
+    div.bg-faqs {
+        background-image: url("../images/faqs.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+
+    img.schedule-img {
+        max-width: 80%;
+    }
+
+    img.logo1 {
+        height: 350px;
+    }
+
+    img.logo2 {
+        height: 350px;
+    }
+
+    img.logo{
+        height: 350px;
+    }
+
+    img.logo1:hover {
+        transform: scale(0.1);
+    }
+    
+    img.logo2:hover {
+        transform: scale(0.1);
+    }
+
+    img.logo:hover {
+        transform: scale(0.1);
+    }
+}
+
+@media only screen and (min-width: 992px) {
+
+    img.schedule-img {
+        max-width: 75%;
+    }
+
+    img.logo1 {
+        height: 350px;
+    }
+
+    img.logo2 {
+        height: 350px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    img.schedule-img {
+        max-width: 90%;
+    }
+   
+    img.logo1 {
+        height: 300px;
+    }
+
+    img.logo2 {
+        height: 300px;
+    }
+
+    img.logo {
+        height: 300px;
+    }
+
+    img.social {
+        height: 50px;
+    }
+
+    img.socialYoutube {
+        height: 40px;
+    }
+}
+
+@media only screen and (max-width: 405px) {
+    img.social {
+        height: 25px;
+    }
+
+    img.socialYoutube {
+        height: 22px;
+    }
+
+    img.logo {
+        height: 200px;
+    }
+
+    div.counter-Txt {
+        height: 20px;
+        font-size: 20px;
+    }
+    
+    div.counter-Txt>span {
+        height: 20px;
+        font-size: 20px;
+    }
+}
+
+.second_nav{
+    background-color: #8C2D19;
+}
+
+a.text_nav{
+    color:white;
+    font-size: 18px;
+}
+
+p.team_role{
+    font-size:17px;
+}
+
+#PROG {
+    background-color:none;
+
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #25294F;
+    top: 0;
+    bottom: 0;
+    left: 49.7%;
+    margin-left: -3px;
+}
+
+/* boxy around content */
+.boxy {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+/* The circles on the timeline */
+.boxy::after {
+    content: ' ';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -10px;
+    background-color: white;
+    border: 4px solid #25294F;
+    top: 30px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Place the boxy to the left */
+.left {
+    left: 0;
+}
+
+/* Place the boxy to the right */
+.right {
+    left: 50%;
+}
+
+/* Add arrows to the left boxy (pointing right) */
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 37px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid rgba(178, 105, 18, 0.3);
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent rgba(178, 105, 18, 0.3);
+}
+
+/* Add arrows to the right boxy (pointing left) */
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 37px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid rgba(178, 105, 18, 0.3);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent rgba(178, 105, 18, 0.3) transparent transparent;
+}
+
+
+/* Fix the circle for boxys on the right side */
+.right::after {
+    left: -16px;
+}
+
+/* The actual content */
+.contentprogrm {
+    padding: 20px 30px;
+    background-color: rgba(178, 105, 18, 0.4);
+    position: relative;
+    /*border-radius: 30px;*/
+    color: #25294F;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .timeline::after {
+        left: 31px;
+    }
+
+    /* Full-width boxys */
+    .boxy {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    /* Make sure that all arrows are pointing leftwards */
+    .boxy::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+
+    /* Make sure all circles are at the same spot */
+    .left::after, .right::after {
+        left: 19px;
+    }
+
+    /* Make all right boxys behave like the left ones */
+    .right {
+        left: 0%;
+    }
+}
+
+.team_button{
+    background:none;
+    border: none;
+    outline:none;
+    box-shadow: none;
+}
+
+.team_button:focus, .team_button:active{
+    background: none;
+    border: none;
+    outline:none;
+    box-shadow: none;
+}
+
+h6.spacing_set{
+    line-height: 1.4;
+}
+
+
+.list-group-item.active {
+    background-color:#25294F;
+    border-color:#25294F;
+}
