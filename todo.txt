@@ -1,0 +1,8 @@
+1 - Remover tabela da direita
+2 - Ordenar a leaderboard
+3 - Da para Mandar imagens/ cenas especiais e corrigir inputs
+4 - (FEITO) Corrigir Imagem da ebec no template dos clues
+5 - Erros de login / bad pass / erros especificos corrigir
+6 - Maneira facil de validar respostas
+7 - Backups
+8 - Imprimir qr

@@ -1,0 +1,159 @@
+
+
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>EBEC 2019</title>
+      <link href="../bootstrap.min.css" rel="stylesheet" type="text/css">
+      <link href="../main.css" rel="stylesheet">
+      <script src="../scripts/jQuery.js"></script>
+      <script src="../scripts/jquery-1.10.2.min.js" defer></script>
+      <script src="../scripts/bootstrap/bootstrap.min.js" defer></script>
+      <script src="../scripts/numscroller-1.0.js" defer></script>
+      <script src="../scripts/prism.js" defer></script>
+      <script src="../scripts/main.js" defer></script>
+      <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+      <script type="text/javascript">
+         var onloadCallback = function() {
+             grecaptcha.render('html_element', {
+             'sitekey' : '6LfBkZMUAAAAAEGfO5W7cZ-iVo8FhVJaB6LgccDV'
+             }); // "live site" 6LfBkZMUAAAAAEGfO5W7cZ-iVo8FhVJaB6LgccDV | "testebec" 6LevkZMUAAAAAJMwatjD7YAq9L25TvXuCCUC7jq9
+         };
+      </script>
+
+        <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+   </head>
+   <body>
+
+ <!-- Login modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Team Login</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+    <form method="post" action='/login' name="login_form">
+      <p><input type="text" class="span3" name="user" id="email" placeholder="Team"></p>
+      <p><input type="password" class="span3" name="pass" placeholder="Pass"></p>
+      <p><button type="submit" class="btn btn-primary">Sign in</button></p>
+    </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+ <!--/Login Modal -->
+
+
+
+      <nav class="navbar navbar-expand-lg fixed-top navbar-cl solid">
+         <a class="navbar-brand" href="../index.php">
+         <img src={{url_for('static', filename='EBEC2-05.png')}} width="45" height="45" alt="">
+         </a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon">
+         <img src={{url_for('static', filename='EBEC2-05.png')}} witdh="45" height="30">
+         </span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+               <li class="nav-item ml-2">
+                  <a class="nav-link text-white" href="http://bestporto.org/website/pt/" target="_blank">BEST</a>
+               </li>
+               <li class="nav-item ml-2">
+                  <a class="nav-link text-white" href="../pages/ebecInfo.php">EBEC</a>
+               </li>
+               <li class="nav-item ml-2">
+                  <a class="nav-link text-white language-label" msg="5" href="../pages/partners.php" tabindex="-1" aria-disabled="true">
+                  Partners 
+                  </a>
+               </li>
+               <li class="nav-item ml-2">
+                  <a class="nav-link text-white" href="../pages/faqs.php" tabindex="-1" aria-disabled="true">FAQs</a>
+               </li>
+
+            </ul>
+
+         </div>
+      </nav>
+      <div class="section">
+    
+
+<div class="row mt-5 mb-5 mr-0 ml-0">
+  <div class="row mt-5 mb-5 mr-0 ml-0">
+
+<!-- {% block content %} -->
+
+<!-- {% endblock content %} -->
+
+    <form method="post" action={{clue['id']}} name="qr_form" enctype="multipart/form-data">
+       <p> <b> Clue: </b> {{clue['text']}} </p>
+
+
+  
+
+    {% if special != None %}
+         <input type="file" name="file" accept="image/*">
+    {% else %}
+          <p> <input type="text" class="span3" name="answer" id="answer" placeholder="Answer to clue"></p>
+    {% endif %}
+
+      <p> <input type="text" class="span3" name="user" placeholder="Team"></p>
+      <p><input type="password" class="span3" name="pass" placeholder="Pass"></p>
+      <p><button type="submit" class="btn btn-primary">Send Answer</button></p>
+    </form>
+</div>
+
+
+    {% if show_image != None %}
+        <img src="{{url_for('static', filename=show_image)}}">
+    {% endif %}
+
+</div>
+         <div class="parallax1"></div>
+      </div>
+      <footer class="footer-backcolor">
+         <div class="footer-copyright text-center">© 2019 Copyright BEST Porto</div>
+      </footer>
+   </body>
+</html>
+
+<script>
+
+function clue_click(clicked_id)
+{
+    str='Clicked on button: ' + clicked_id;
+    alert(str);
+}
+
+</script>
