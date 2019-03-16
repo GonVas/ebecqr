@@ -32,6 +32,8 @@ create table Answer
 	idTeam integer not null,
 	idClue integer not null,
 
+	Timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
+
 	constraint clue_fkey foreign key (idClue) references Clue,
 	constraint team_fkey foreign key (idTeam) references Team
 
@@ -105,7 +107,7 @@ INSERT INTO Team (name, pass) VALUES('Sherlock Ohms', 'resistencia');
 INSERT INTO Team (name, pass) VALUES('RIP Super2000', 'mbway');
 
 
-INSERT INTO Clue (clue, correct) VALUES('Quais as empresas que estiveram presentes na sessão de networking?', 'Claranet;Agap2IT;Celfocus' );
+INSERT INTO Clue (clue, correct) VALUES('Quantos anos tem a Universidade do Porto (numero de anos)', '107;107 anos');
 INSERT INTO Clue (clue, correct) VALUES('Quantas edições da EBEC já existiram no Porto?', '10' );
 INSERT INTO Clue (clue, correct, special) VALUES('Como é que cortas um bolo cilíndrico em 8 fatias iguais apenas com 3 cortes? Faz um desenho numa folha de papel e submete-o.', 'vidal', 'image');
 INSERT INTO Clue (clue, correct, special) VALUES('Resolve este puzzle e submete a captura de ecrã no código QR ','50', 'image' );
