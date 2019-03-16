@@ -40,14 +40,75 @@ create table Answer
 
 #seeding with some examples
 
-INSERT INTO Team (name, pass) VALUES('Equipa top', 'ola' );
-INSERT INTO Team (name, pass) VALUES('Genericos', 'ola1' );
-INSERT INTO Team (name, pass) VALUES('Maus', 'ola2' );
+#INSERT INTO Team (name, pass) VALUES('Equipa top', 'ola' );
+#INSERT INTO Team (name, pass) VALUES('Genericos', 'ola1' );
+#INSERT INTO Team (name, pass) VALUES('Maus', 'ola2' );
+
+
+INSERT INTO Team (name, pass) VALUES('our neck his back', 'crack');
+INSERT INTO Team (name, pass) VALUES('Outlanders', 'caixote');
+INSERT INTO Team (name, pass) VALUES('Electricae', 'eletro');
+INSERT INTO Team (name, pass) VALUES('Name this Group', 'quadro');
+INSERT INTO Team (name, pass) VALUES('Queria TD', 'ripcs');
+INSERT INTO Team (name, pass) VALUES('Os Socios', 'computador');
+INSERT INTO Team (name, pass) VALUES('Problem Solvers', 'solvingp');
+INSERT INTO Team (name, pass) VALUES('Cheese wolves', 'caes');
+INSERT INTO Team (name, pass) VALUES('NaLutaPor1CT', 'credito');
+INSERT INTO Team (name, pass) VALUES('Ena Pa 1999', '19145');
+INSERT INTO Team (name, pass) VALUES('La Matilha', 'buelobos');
+INSERT INTO Team (name, pass) VALUES('One Big HOAX', 'insidejob');
+INSERT INTO Team (name, pass) VALUES('DexterityTeam', 'destros');
+INSERT INTO Team (name, pass) VALUES('Capisce', 'casaco');
+INSERT INTO Team (name, pass) VALUES('Enlighten', '15821');
+INSERT INTO Team (name, pass) VALUES('MakeItWorth', 'milhoes');
+
+#TD
+INSERT INTO Team (name, pass) VALUES('PUROS', 'pureza');
+INSERT INTO Team (name, pass) VALUES('Blank', 'vazio');
+INSERT INTO Team (name, pass) VALUES('New Folder', 'mkdir');
+INSERT INTO Team (name, pass) VALUES('MecGyvers', 'engenhosos');
+INSERT INTO Team (name, pass) VALUES('Os Gordos Overseas', 'magros');
+INSERT INTO Team (name, pass) VALUES('Nonsense', 'livros'); 
+INSERT INTO Team (name, pass) VALUES('Mini-Natas', 'pasteis');
+INSERT INTO Team (name, pass) VALUES('The Widlarizers', 'bosque');
+INSERT INTO Team (name, pass) VALUES('Gibraltar', 'espanha');
+INSERT INTO Team (name, pass) VALUES('ElJuego98', 'caderno');
+INSERT INTO Team (name, pass) VALUES('3mais1', 'daquatro');
+INSERT INTO Team (name, pass) VALUES('Os Marretas', 'fitacola');
+INSERT INTO Team (name, pass) VALUES('Mecos', 'banho');
+INSERT INTO Team (name, pass) VALUES('EleCtro TEAM', 'jardim');
+INSERT INTO Team (name, pass) VALUES('Walky Talky', 'whatsapp');
+INSERT INTO Team (name, pass) VALUES('Circuito Aberto', 'fechado');
+INSERT INTO Team (name, pass) VALUES('Big Mec', 'whopper');
+INSERT INTO Team (name, pass) VALUES('Robotic Generation', 'robots');
+INSERT INTO Team (name, pass) VALUES('We Matter', 'cadeira');
+INSERT INTO Team (name, pass) VALUES('Ebelc', 'carta');
+INSERT INTO Team (name, pass) VALUES('Processo', 'nomeenorme');
+INSERT INTO Team (name, pass) VALUES('Hackers at Porto', 'hackers');
+INSERT INTO Team (name, pass) VALUES('Entalpia de Pavor', 'medoo');
+INSERT INTO Team (name, pass) VALUES('Carro Vassoura', 'lixeiro');
+INSERT INTO Team (name, pass) VALUES('Televida', 'parede'); 
+INSERT INTO Team (name, pass) VALUES('Fundo do Barril 2', 'nortada');
+INSERT INTO Team (name, pass) VALUES('Jaime', 'jaimejaime');
+INSERT INTO Team (name, pass) VALUES('Turtle Light', 'crocodilo');
+INSERT INTO Team (name, pass) VALUES('Glorious Basterds', 'janela');
+INSERT INTO Team (name, pass) VALUES('Nosgenios', 'acentos');
+INSERT INTO Team (name, pass) VALUES('Massa com esparguete', 'arroz');
+INSERT INTO Team (name, pass) VALUES('Os Porta Paletes',  'madeira');
+INSERT INTO Team (name, pass) VALUES('Bambolinas', 'garrafa');
+INSERT INTO Team (name, pass) VALUES('Udjiuva', 'vinho');
+INSERT INTO Team (name, pass) VALUES('HeadMasters', 'sudo');
+INSERT INTO Team (name, pass) VALUES('ViTec', 'random');
+INSERT INTO Team (name, pass) VALUES('La Div', 'modulo');
+INSERT INTO Team (name, pass) VALUES('Confia Bro', 'confes');
+INSERT INTO Team (name, pass) VALUES('Sherlock Ohms', 'resistencia');
+INSERT INTO Team (name, pass) VALUES('RIP Super2000', 'mbway');
+
 
 INSERT INTO Clue (clue, correct) VALUES('Quais as empresas que estiveram presentes na sessão de networking?', 'Claranet;Agap2IT;Celfocus' );
 INSERT INTO Clue (clue, correct) VALUES('Quantas edições da EBEC já existiram no Porto?', '10' );
 INSERT INTO Clue (clue, correct, special) VALUES('Como é que cortas um bolo cilíndrico em 8 fatias iguais apenas com 3 cortes? Faz um desenho numa folha de papel e submete-o.', 'vidal', 'image');
-INSERT INTO Clue (clue, correct) VALUES('Resolve este puzzle e submete a captura de ecrã no código QR ','50' );
+INSERT INTO Clue (clue, correct, special) VALUES('Resolve este puzzle e submete a captura de ecrã no código QR ','50', 'image' );
 INSERT INTO Clue (clue, correct) VALUES('h jhtpuov kl abypt. ceasar.jpg', 'A caminho de Turim' );
 INSERT INTO Clue (clue, correct) VALUES('Qual a experiência da Celfocus? ', 'Digital Transformation;Fixed-mobile convergence;digital TV;one net;mobile office;oss offer;digital employee portal;analytics' );
 INSERT INTO Clue (clue, correct) VALUES('Quais são os os domains of expertise da Celfocus', 'BSS;OSS IoT;Unnified Comms;Digital TV' );
